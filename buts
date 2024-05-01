@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fbf3db;
+  border: none;
+  font-style: bold;
+  font-family: Gregoria, serif;
+  color: #a4725a;
+  text-align: center;
+  font-size: 25px;
+  padding: 11px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+
+<button class="button" style="vertical-align:middle"><span>MOOD BOARD </span></button>
+
+ <script>
+    function navigate() {
+      window.open("https://www.notion.so/Mood-Board-e26e06b7c67c4a32a991ada32dfb8405?pvs=4", '_parent').focus();
+    }
+  </script>
+  
+</body>
+</html>
+
+
